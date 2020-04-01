@@ -11,6 +11,16 @@
     <h2>Mad Libs are stories of words missing, which you fill in on your own;the results are hi-LARIOUS. Try putting in some of your own words (four per type of word, a comma between each word and NO SPACES),choose a stroy for them to be plugged into, then just hit submit.
         We will have a lot of fun. yay.
     </h2>
+    <div id="user-input-words">
+        <label>Noun:</label>
+        <input id="speech-word-type" type="text">
+        <label>Verb:</label>
+        <input id="speech-word-type" type="text">
+        <label>Adverb:</label>
+        <input id="speech-word-type" type="text">
+        <label>Adjective:</label>
+        <input id="speech-word-type" type="text">
+    </div>
     <button id='gen-madlib'>Submit Your MadLib</button>
     <form>
         <label class='container' for='is-christmas-radio'>Christmas
@@ -23,13 +33,10 @@
             <input type='radio' name='brainstorm-type' id='is-brainstorm-radio' value='brainstorm'>
         </label>
     </form>
-    <div>
-        
-    </div>
+    <div id='curr-story'></div>
+    <script src="random.js"></script>
+    <script src="stories.js"></script>
+    <script src="defaultWords.js"></script>
     <script src="script.js"></script>
-    <!-- <srcipt src="noun.js"></srcipt>
-    <srcipt src="verb.js"></srcipt>
-    <srcipt src="adverb.js"></srcipt>
-    <srcipt src="adjective.js"></srcipt> -->
 </body>
 </html>
